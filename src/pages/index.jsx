@@ -264,7 +264,7 @@ export default function Home({ articles }) {
             web slinger <br/> space cowboy <br/> c2 irl
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            i'm walker norris, a web slinger based in castle hayne, nc. <br/> i'm into all things react, wild west, and rocket league. <br/> - currently working for Thinkhuman.co.
+            i&apos;m walker norris, a web slinger based in castle hayne, nc. <br/> i&apos;m into all things react, wild west, and rocket league. <br/> - currently working for Thinkhuman.co.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
