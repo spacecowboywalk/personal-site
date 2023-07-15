@@ -257,6 +257,8 @@ export default function Home({ articles }) {
           name="description"
           content="i'm walker Norris, a web slinger based in castle hayne, nc. i'm into all things react, wild west, and rocket league."
         />
+        <meta property="og:image" content="/space_cowboy.png" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">

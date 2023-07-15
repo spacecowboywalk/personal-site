@@ -7,6 +7,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/space_cowboy.png'
+import { Head } from 'next/document'
 
 function CloseIcon(props) {
   return (
