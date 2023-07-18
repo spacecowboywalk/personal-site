@@ -61,13 +61,13 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl mb-3">
-              i&apos;m walker, the space cowboy. 
+              walker<br></br> the space cowboy. 
               
             </h1>
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl opacity-[0.69]">Embracing the power of creation fueled by love.</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl opacity-[0.69]">embracing the power of creation fueled by love.</h2>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                With a spirit as boundless as the cosmos, I find solace in the act of creation. Each grain of sand and every star in the sky holds its own mesmerizing count, just like my imagination knows no limits. As I grew up alongside my four full-blood siblings, I witnessed their pursuits and dreams overshadowed by fear, fueling my own desire to forge a different path.
+                With a spirit as boundless as the cosmos, I find solace in the act of creation. Each grain of sand and every star in the sky holds its own mesmerizing count, just like my imagination knows no limits. Observing the world, as I grew up, I noticed a trend of pursuits and dreams overshadowed by fear, fueling my own desire to forge a different path.
               </p>
               <p>
                 During my childhood, I often observed my siblings engrossed in video games and computer creations, igniting a spark within me. I yearned to unleash my own creative potential. As I&apos;ve matured, my fascination has transformed into a profound appreciation for observation, yet the time has come for me to embrace my true calling: creation.

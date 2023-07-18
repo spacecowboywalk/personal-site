@@ -16,11 +16,11 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/closer.jpeg'
+import image2 from '@/images/photos/222.webp'
+import image3 from '@/images/photos/intention.png'
+import image4 from '@/images/photos/spidey.webp'
+import image5 from '@/images/photos/octane.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -251,11 +251,11 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          walker norris - web slinger, gamer, and amateur astronaut
+          walker norris | web slinger | space cowboy | chmp irl 🏎️
         </title>
         <meta
           name="description"
-          content="i'm walker Norris, a web slinger based in castle hayne, nc. i'm into all things react, wild west, and rocket league."
+          content="i'm walker Norris, a front-end web developer based in castle hayne, nc. i'm into all things react, wild west, and rocket league."
         />
         <meta property="og:image" content="/space_cowboy.png" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -266,7 +266,7 @@ export default function Home({ articles }) {
             web slinger <br/> space cowboy <br/> chmp irl 🏎️
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            i&apos;m walker norris, a web slinger based in castle hayne, nc. <br/> i&apos;m into all things react, wild west, and rocket league. <br/> - currently working for Thinkhuman.co.
+            i&apos;m walker norris, a front-end web developer based in castle hayne, nc. <br/> i&apos;m into all things react, wild west, and rocket league. <br/> - currently working for Thinkhuman.co.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
