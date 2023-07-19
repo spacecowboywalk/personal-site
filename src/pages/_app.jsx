@@ -21,9 +21,9 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <div className="fixed inset-0 flex justify-center sm:px-8 bg-[url(https://images.hdqwalls.com/download/no-mans-sky-spaceman-4k-lo-2560x1440.jpg)] dark:bg-[url(https://images6.alphacoders.com/863/thumb-1920-863542.png)]">
+      <div className="fixed inset-0 flex justify-center sm:px-8 bg-cover bg-[url(https://e1.pxfuel.com/desktop-wallpaper/653/602/desktop-wallpaper-cowboy-bebop-iphone-x-cowboy-bebop-iphone-thumbnail.jpg)] sm:bg-[url(https://images.hdqwalls.com/download/no-mans-sky-spaceman-4k-lo-2560x1440.jpg)] dark:bg-[url(https://images6.alphacoders.com/863/thumb-1920-863542.png)]">
         <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full bg-white/10 backdrop-blur-xl ring-1 ring-zinc-100 dark:ring-zinc-300/20" />
+          <div className="w-full bg-white/10 backdrop-blur-sm sm:backdrop-blur-xl ring-1 ring-zinc-100 dark:ring-zinc-300/20" />
         </div>
       </div>
       <div className="relative">
