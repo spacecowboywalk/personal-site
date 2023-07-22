@@ -250,9 +250,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          walker norris | web slinger | space cowboy | chmp irl 🏎️
-        </title>
+        <title>walker norris | web slinger | space cowboy | chmp irl 🏎️</title>
         <meta
           name="description"
           content="i'm walker Norris, a front-end web developer based in castle hayne, nc. i'm into all things react, wild west, and rocket league."
@@ -263,10 +261,12 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-6xl">
-            web slinger <br/> space cowboy <br/> chmp irl 🏎️
+            web slinger <br /> space cowboy <br /> chmp irl 🏎️
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            i&apos;m walker norris, a front-end web developer based in castle hayne, nc. <br/> i&apos;m into all things react, wild west, and rocket league. <br/> - currently working for Thinkhuman.co.
+            i&apos;m walker norris, a front-end web developer based in castle
+            hayne, nc. <br /> i&apos;m into all things react, wild west, and
+            rocket league. <br /> - currently working for Thinkhuman.co.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
