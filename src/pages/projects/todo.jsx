@@ -1,50 +1,53 @@
 // Importing the useState and useEffect hooks from React
-import classNames from 'classnames';
-import { useState, useEffect } from 'react';
+import classNames from 'classnames'
+import { useState, useEffect } from 'react'
 
 // Defining the functional component TodoList
 const TodoList = () => {
   // Using the useState hook to create state variables
-  const [newItem, setNewItem] = useState(''); // State variable for the new item input
-  const [todos, setTodos] = useState([]); // State variable for the list of todos, initially an empty array
+  const [newItem, setNewItem] = useState('') // State variable for the new item input
+  const [todos, setTodos] = useState([]) // State variable for the list of todos, initially an empty array
 
   // Load todos from localStorage on component mount
   useEffect(() => {
     // Retrieve stored todos from localStorage
-    const storedTodos = localStorage.getItem('todos');
+    const storedTodos = localStorage.getItem('todos')
     // Check if there are any stored todos
     if (storedTodos) {
       // If storedTodos is not empty, parse the JSON and set it as the initial state of todos
-      setTodos(JSON.parse(storedTodos));
+      setTodos(JSON.parse(storedTodos))
     }
-  }, []);
+  }, [])
 
   // Function to handle form submission when adding a new item
   function handleSubmit(e) {
-    e.preventDefault();
-    const newTodos= [...todos, { id: crypto.randomUUID(), title: newItem, completed: false }];
+    e.preventDefault()
+    const newTodos = [
+      ...todos,
+      { id: crypto.randomUUID(), title: newItem, completed: false },
+    ]
     // Updating the todos state with a new item using the currentTodos value provided by the useState callback
-    setTodos(newTodos);
+    setTodos(newTodos)
     if (newTodos.length !== 0) {
       // If there are todos, save them to localStorage as a JSON string
-      localStorage.setItem('todos', JSON.stringify(newTodos));
+      localStorage.setItem('todos', JSON.stringify(newTodos))
     }
-    setNewItem(''); // Clear the newItem input after adding an item
+    setNewItem('') // Clear the newItem input after adding an item
   }
 
   // Function to handle the deletion of a todo item
   function handleDelete(id) {
     // Filter out the todo with the provided id from the todos list and create a newTodos array without that todo
-    const newTodos = todos.filter((todo) => todo.id !== id);
+    const newTodos = todos.filter((todo) => todo.id !== id)
     // Update the todos state with the newTodos array, effectively removing the deleted todo from the list
-    setTodos(newTodos);
+    setTodos(newTodos)
     // Check if the newTodos array is empty
     if (newTodos.length === 0) {
       // If the newTodos array is empty, remove the 'todos' key from localStorage
-      localStorage.removeItem('todos');
+      localStorage.removeItem('todos')
     } else {
       // If the newTodos array is not empty, save it to localStorage as a JSON string
-      localStorage.setItem('todos', JSON.stringify(newTodos));
+      localStorage.setItem('todos', JSON.stringify(newTodos))
     }
   }
 
@@ -53,22 +56,22 @@ const TodoList = () => {
     // Map over the todos list and toggle the completed property of the todo with the provided id
     const newTodos = todos.map((todo) => {
       if (todo.id === id) {
-        return { ...todo, completed: !todo.completed };
+        return { ...todo, completed: !todo.completed }
       }
-      return todo;
-    });
+      return todo
+    })
     // Update the todos state with the newTodos array, effectively toggling the completed property of the todo
-    setTodos(newTodos);
+    setTodos(newTodos)
     // Check if the newTodos array is not empty
     if (newTodos.length !== 0) {
       // If the newTodos array is not empty, save it to localStorage as a JSON string
-      localStorage.setItem('todos', JSON.stringify(newTodos));
+      localStorage.setItem('todos', JSON.stringify(newTodos))
     }
   }
 
   // The TodoList component returns JSX to render the UI
   return (
-    <div className="m-6 rounded-lg bg-white/30 p-6 dark:bg-black/30  max-w-lg mx-auto dark:text-white">
+    <div className="m-6 mx-auto max-w-lg rounded-lg bg-white/30  p-6 dark:bg-black/30 dark:text-white">
       <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row mb-6">
           <label htmlFor="item" className="block text-sm font-medium leading-6">
@@ -96,21 +99,28 @@ const TodoList = () => {
         {todos.map((todo) => (
           <li
             key={todo.id}
-            className={classNames("group flex justify-between rounded-lg bg-white p-2", {
-              "opacity-50": todo.completed,
-            })}
+            className={classNames(
+              'group flex justify-between rounded-lg bg-white p-2',
+              {
+                'opacity-50': todo.completed,
+              }
+            )}
           >
             <label className="flex items-center gap-2 text-black">
               {/* Checkbox input to mark the todo as completed, checked state bound to todo's completed property */}
-              <input type="checkbox" checked={todo.completed} onChange={()=>{
-                handleComplete(todo.id);
-              }} />
+              <input
+                type="checkbox"
+                checked={todo.completed}
+                onChange={() => {
+                  handleComplete(todo.id)
+                }}
+              />
               {todo.title}
             </label>
             {/* Button to delete the todo item, calling the handleDelete function onClick */}
             <button
               onClick={() => {
-                handleDelete(todo.id);
+                handleDelete(todo.id)
               }}
               className="rounded bg-red-50 px-2 py-1 text-xs font-semibold text-red-600 opacity-0 shadow-sm transition-opacity duration-500 hover:bg-red-600 hover:text-white group-hover:opacity-100"
             >
@@ -120,11 +130,11 @@ const TodoList = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
 // Exporting the TodoList component as the default export of the module
 export default function TodoListPage() {
   // TodoListPage component returns the TodoList component
-  return <TodoList />;
+  return <TodoList />
 }

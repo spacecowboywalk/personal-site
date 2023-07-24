@@ -3,26 +3,25 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
+import oof from '@/images/photos/octane.jpeg'
 import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import hugstable from '@/images/photos/222.webp'
 
 const projects = [
   {
     name: 'todo list',
     description: 'a simple todo list app built with Next.js and Tailwind CSS.',
     link: { href: '/projects/todo', label: 'todo' },
-    logo: logoPlanetaria,
+    logo: hugstable,
   },
-  // {
-  //   name: 'Animaginary',
-  //   description:
-  //     'High performance web animation library, hand-written in optimized WASM.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoAnimaginary,
-  // },
+  {
+    name: 'tictactoe',
+    description: 'fun game of tictactoe to play with friends and family.',
+    link: { href: '/projects/tictactoe', label: 'tictactoe' },
+    logo: oof,
+  },
   // {
   //   name: 'HelioStream',
   //   description:
@@ -64,12 +63,12 @@ export default function Projects() {
         <title>projects - walker</title>
         <meta
           name="description"
-          content="things i&apos;ve made that reflect my dent in the universe."
+          content="things i've made that reflect my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="things i&apos;ve made that reflect my dent in the universe."
-        intro="i&apos;ve worked on a few little projects recently but these are the ones that i&apos;m most proud of. many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="things i've made that reflect my dent in the universe."
+        intro="i've worked on a few little projects recently but these are the ones that i'm most proud of. many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
       >
         <ul
           role="list"
