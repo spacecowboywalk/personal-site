@@ -106,7 +106,7 @@ const Board = () => {
 
     // If no winner is found and all squares are filled, it's a draw.
     if (!boardState.includes(null)) {
-      setWinner('draw')
+      setWinner('EVERYBODY')
     }
   }
 
