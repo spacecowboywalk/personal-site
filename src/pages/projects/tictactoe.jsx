@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react'
 
 const XIcon = () => {
   return (
-    <div className="font-serif lg:text-9xl sm:text-4xl font-extrabold text-orange-600">X</div>
+    <div className="font-serif lg:text-9xl sm:text-6xl font-extrabold text-orange-600">X</div>
   )
 }
 const OIcon = () => {
   return (
-    <div className="font-serif lg:text-9xl sm:text-4xl font-extrabold text-blue-600">O</div>
+    <div className="font-serif lg:text-9xl sm:text-6xl font-extrabold text-blue-600">O</div>
   )
 }
 
