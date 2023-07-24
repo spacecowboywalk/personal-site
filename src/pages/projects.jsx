@@ -61,15 +61,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>projects - walker</title>
         <meta
           name="description"
-          content="things i’ve made trying to put my dent in the universe."
+          content="things i&apos;ve made that reflect my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="things i’ve made trying to put my dent in the universe."
-        intro="i’ve worked on a few little projects recently but these are the ones that i’m most proud of. many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="things i&apos;ve made that reflect my dent in the universe."
+        intro="i&apos;ve worked on a few little projects recently but these are the ones that i&apos;m most proud of. many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
       >
         <ul
           role="list"

@@ -66,7 +66,7 @@ export default function About() {
             <h2 className="text-3xl font-bold tracking-tight text-zinc-800 opacity-[0.69] dark:text-zinc-100 sm:text-4xl">
               embracing the power of creation fueled by love.
             </h2>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-white dark:text-zinc-400">
               <p>
                 With a spirit as boundless as the cosmos, I find solace in the
                 act of creation. Each grain of sand and every star in the sky
