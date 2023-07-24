@@ -34,7 +34,7 @@ const Scoreboard = ({ scores }) => {
 }
 const WinningMessage = ({ winner, onButtonClick }) => {
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-black/60">
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center rounded-lg bg-black/60">
       <div className="font-mono text-5xl font-extrabold text-purple-400">
         {winner} WINS!
       </div>
